@@ -1,4 +1,3 @@
-# iSCSIWITHVM
 
 # VMware虛擬化環境進行簡易的iSCSI配置-NAS以QNAP為例
 
