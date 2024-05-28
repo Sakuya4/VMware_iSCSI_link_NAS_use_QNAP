@@ -73,6 +73,10 @@
 
 :bulb:這裡其實要設定介面卡，新增並且啟用`iSCSI`。
 
+💡 更新：這裡`VMkernel NIC`不要設定和NAS端口相同的IP，例如`VMkernel NIC`設定IP.166，NAS的Port IP.166，會衝突。
+
+請將`VMkernel NIC`假設另一組IP, 例如.200。
+
 ![image](https://hackmd.io/_uploads/H1SXeFE7R.png)
 
 ![image](https://hackmd.io/_uploads/Hk3sgFE7A.png)
@@ -101,7 +105,7 @@ NAS端設定完成，使用虛擬機進行iSCSI連接測試。
 
 ## 四、建置結果展示以及驗證
 
-驗證結果，直接輸入剛剛設定好的`固定IP`, 我這邊設定為：`10.100.100.166`，直接數入就可以看到我切的LUN了。
+驗證結果，直接輸入剛剛設定好NAS Port的`固定IP`, 我這邊設定為：`10.100.100.166`，直接數入就可以看到我切的LUN了。
 
 
 
